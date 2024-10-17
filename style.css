@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    color: blueviolet;
+    text-align: center;
+}
+img{
+    border-color:blue;
+    border-bottom: 15px;
+    border: 10px;
+    text-align: center;
+    width: fit-content;
+    height: 500px;
+
+}
+h1{
+    font-stretch: narrower;
+    font-size: 50px;
+}
+p{
+    font-size: 25px;
+    font-style: italic;
+}
+nav{
+    text-align: center;
+}
+pre{
+    text-align: center;
+}
+a{
+    color: brown;
+}

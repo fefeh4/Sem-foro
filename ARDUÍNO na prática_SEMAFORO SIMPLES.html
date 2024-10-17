@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arduíno simples</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Página principal</a>
+        <a href="Tinkercad_SEMAFORO SIMPLES.html">Semáforo simples</a>
+        <a href="ARDUÍNO na prática_SEMAFORO SIMPLES.html">Semáforo prática</a>
+        <a href="Tinkercad_semáforo_duplo.html">Semáforo duplo</a>
+        <a href="ARDUÍNO na prática_SEMAFORO DUPLO.html">Semáforo duplo prática</a>
+        <a href="contador_crescente.html">Crescente</a>
+        <a href="contador_decrescente.html">Decrescente</a>
+        <a href="descrecente_duplo.html">Decrescente duplo</a>
+    </nav>
+    <div>
+        <img src="semafaro_simples.jpg" alt="Semafaro simples">
+    </div>
+    <br>
+    <div>
+    <video controls>
+        <source src="./senaleira_vid.mp4">
+    </video>   
+    </div>
+    <div>
+        <img src="C++ semafaro simples.png" alt="C++">
+    </div>
+    <br>
+    <pre>
+        // C++ code
+//
+int counter;
+
+void setup()
+{
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+}
+
+void loop()
+{
+  for (counter = 0; counter < 10; ++counter) {
+    digitalWrite(8, HIGH);
+    digitalWrite(9, LOW);
+    digitalWrite(10, LOW);
+    delay(4000); // Wait for 4000 millisecond(s)
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+    digitalWrite(10, HIGH);
+    delay(4000); // Wait for 4000 millisecond(s)
+    digitalWrite(8, LOW);
+    digitalWrite(9, HIGH);
+    digitalWrite(10, LOW);
+    delay(4000); // Wait for 4000 millisecond(s)
+  }
+}
+    </pre>
+</body>
+</html>
